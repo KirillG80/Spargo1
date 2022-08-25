@@ -9,6 +9,7 @@ namespace Spargo.DAL
     public interface IRepository<T> where T : EntityBase
     {
         Task<T> GetById(int id);
+
         Task<IEnumerable<T>> GetAll();
         Task Create(T entity);
         void Update(T entity);
