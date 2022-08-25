@@ -11,6 +11,7 @@ namespace Spargo.DAL
         Task<T> GetById(int id);
 
         Task<IEnumerable<T>> GetAll();
+
         Task Create(T entity);
         void Update(T entity);
         Task Delete(int id);
